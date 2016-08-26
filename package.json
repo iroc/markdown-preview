@@ -1,7 +1,7 @@
 {
-  "name": "note-sync",
+  "name": "iroc",
   "version": "0.0.1",
-  "description": "",
+  "description": "a markdown file previewer and builder",
   "main": "./bin/iroc",
   "repository": {
     "type": "git",
