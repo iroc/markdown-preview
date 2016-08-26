@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+const program = require('commander')
+const config = require('../config')
+
+program.version('0.0.1')
+
+// help
+program
+  .command('help')
+  .description('显示使用帮助')
+  .action(() => {
+    program.outputHelp()
+  })
+
+// preview
+program
+  .command('preview [file]')
+  .description('实时预览')
+  .option('-p, --port <port>', `实时预览端口号，默认：${config.port}`)
+  .action(require('../lib/preview'))
+
+// build
+program
+  .command('build [file]')
+  .description('生成静态HTML')
+  .option('-o, --output <file>', '生成的静态HTML文件存放路径')
+  .action(require('../lib/build'))
+
+// 开始解析命令
+program.parse(process.argv)

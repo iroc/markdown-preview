@@ -1,0 +1,23 @@
+{
+  "name": "note-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "iroc": "./bin/iroc"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "express": "^4.14.0",
+    "github-markdown-css": "^2.4.0",
+    "hbs": "^4.0.0",
+    "marked": "^0.3.6",
+    "socket.io": "^1.4.8"
+  }
+}
