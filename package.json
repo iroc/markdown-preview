@@ -1,18 +1,32 @@
 {
   "name": "note-sync",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./bin/iroc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iroc/markdown-preview"
+  },
   "scripts": {
+    "start": "node ./bin/iroc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "markdown",
+    "cli",
+    "command",
+    "parser"
+  ],
+  "author": {
+    "name": "iroc",
+    "email": "mail@lipengzhou.com"
+  },
+  "license": "MIT",
   "bin": {
     "iroc": "./bin/iroc"
   },
   "dependencies": {
+    "colors": "^1.1.2",
     "commander": "^2.9.0",
     "express": "^4.14.0",
     "github-markdown-css": "^2.4.0",
